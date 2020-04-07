@@ -1,0 +1,44 @@
+form {
+  min-width: 25rem;
+  max-width: 35rem;
+  width: 35vw;
+}
+
+.inputItem {
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputItem label {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.inputItem input,
+.inputItem select {
+  font-size: 1rem;
+  background: none;
+  padding-left: 0.15rem;
+  outline: none;
+  border: none;
+  border-bottom: 0.1rem solid #c1c1c1;
+  transition: all 0.5s;
+  flex-grow: 1;
+  align-self: flex-end;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.inputItem input:focus,
+.inputItem select:focus {
+  border-color: #5f5fc4;
+  border-width: 0.2rem;
+  margin-bottom: 0.2rem;
+  color: #111;
+}
+
+.inputItem span {
+  margin-top: 0.15rem;
+  font-size: 0.75rem;
+}
