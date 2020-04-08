@@ -8,6 +8,10 @@ body {
   user-select: none;
 }
 
+a {
+  color: white;
+}
+
 h2 {
   text-align: center;
 }

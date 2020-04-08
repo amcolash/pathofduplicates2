@@ -4,6 +4,8 @@
   border-radius: 0.2rem;
   box-shadow: 0.1rem 0.1rem 0.25rem rgba(0, 0, 0, 0.5);
   min-width: 20rem;
-  max-width: 35rem;
-  width: 35vw;
+  max-width: 95vw;
+  width: 40vw;
+  margin-bottom: 2rem;
+  z-index: 1;
 }

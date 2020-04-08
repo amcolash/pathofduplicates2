@@ -47,7 +47,17 @@ export default class App extends React.Component {
           )}
         </Card>
         <footer>
-          Note: Data may be up to 5 minutes behind live items in your stash. This is to help prevent rate-limiting on your account.
+          <span>
+            Note: Data may be up to 5 minutes behind live items in your stash. This is to help prevent rate-limiting on your account.
+          </span>
+          <br />
+          <span>
+            Source code and more info on{' '}
+            <a href="https://github.com/amcolash/pathofduplicates2" target="_blank">
+              Github
+            </a>
+            . NO DATA is stored on the server - only locally in your browser.
+          </span>
         </footer>
       </div>
     );
