@@ -9,7 +9,13 @@ export default function SettingsComponent(props) {
       <form>
         <div className="inputItem">
           <label>Account</label>
-          <input type="text" spellCheck="false" value={user} onChange={(e) => onValueChanged(e.target.value, league, poesessid)} />
+          <input
+            type="text"
+            spellCheck="false"
+            autoComplete="false"
+            value={user}
+            onChange={(e) => onValueChanged(e.target.value, league, poesessid)}
+          />
           <div className="break"></div>
           <a href="/images/account.png" target="_blank">
             What is my account?
@@ -30,7 +36,13 @@ export default function SettingsComponent(props) {
 
         <div className="inputItem">
           <label>POESESSID</label>
-          <input type="password" spellCheck="false" value={poesessid} onChange={(e) => onValueChanged(user, league, e.target.value)} />
+          <input
+            type="password"
+            spellCheck="false"
+            autoComplete="false"
+            value={poesessid}
+            onChange={(e) => onValueChanged(user, league, e.target.value)}
+          />
           <div className="break"></div>
           <a href="/images/poesessid.png" target="_blank">
             What is my POESESSID?

@@ -57,7 +57,7 @@ app.get('/poe', (req, res) => {
 // Simple wrapper to return an axios request which bypasses CORS and sends along the auth cookie
 function getTab(user, league, poesessid, i) {
   const url = `https://www.pathofexile.com/character-window/get-stash-items?league=${league}&tabIndex=${i}&accountName=${user}`;
-  console.log(url);
+  console.log(new Date().toLocaleString(), url);
   return axios.get(url, {
     headers: {
       authority: 'www.pathofexile.com',

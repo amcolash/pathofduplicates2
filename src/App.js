@@ -27,7 +27,6 @@ export default class App extends React.Component {
         <Settings className="settingsIcon" onClick={() => this.setState({ showSettings: !this.state.showSettings })} />
         <Card>
           <h2>Path of Duplicates 2</h2>
-          <br />
           {showSettings ? (
             <SettingsComponent
               user={user}

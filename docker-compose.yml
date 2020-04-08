@@ -1,0 +1,9 @@
+version: '2'
+services:
+  pod2:
+    image: amcolash/pod2
+    build: ./
+    container_name: pod2
+    restart: unless-stopped
+    ports:
+      - 8002:8002

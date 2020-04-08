@@ -97,12 +97,11 @@ export default class Duplicates extends React.Component {
               </div>
             ))}
           </div>
-        ) : (
-          <button disabled={loading} onClick={() => this.getData()}>
-            <span>Find Duplicates</span>
-            {loading ? <Loader className="loader" /> : null}
-          </button>
-        )}
+        ) : null}
+        <button disabled={loading} onClick={() => this.getData()}>
+          <span>Find Duplicates</span>
+          {loading ? <Loader className="loader" /> : null}
+        </button>
       </div>
     );
   }
