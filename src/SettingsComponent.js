@@ -26,7 +26,8 @@ export default function SettingsComponent(props) {
           <label>League</label>
           <select value={league} onChange={(e) => onValueChanged(user, e.target.value, poesessid)}>
             <option value="delirium">Delirium</option>
-            <option value="todo">TODO</option>
+            <option value="standard">Standard</option>
+            <option value="hardcore">Hardcore</option>
           </select>
           <div className="break"></div>
           <a href="/images/league.png" target="_blank">
