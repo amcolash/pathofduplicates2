@@ -16,7 +16,11 @@
 
 .item {
   display: flex;
-  padding: 1rem;
+  padding: 0.65rem;
+  margin: 0.5rem;
+  border: 1px solid #c9c9c9;
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
 }
 
 .icon {

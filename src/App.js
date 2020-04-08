@@ -39,6 +39,9 @@ export default class App extends React.Component {
                 window.localStorage.setItem('league', league);
                 window.localStorage.setItem('poesessid', poesessid);
               }}
+              closeSettings={() => {
+                this.setState({ showSettings: false });
+              }}
             />
           ) : (
             <Duplicates user={user} league={league} poesessid={poesessid} />

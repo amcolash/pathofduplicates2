@@ -2,7 +2,7 @@ import React from 'react';
 import './SettingsComponent.css';
 
 export default function SettingsComponent(props) {
-  const { user, league, poesessid, onValueChanged } = props;
+  const { user, league, poesessid, onValueChanged, closeSettings } = props;
 
   return (
     <div>
@@ -29,6 +29,12 @@ export default function SettingsComponent(props) {
           <input type="password" spellCheck="false" value={poesessid} onChange={(e) => onValueChanged(user, league, e.target.value)} />
           <div className="break"></div>
           <span>What is my POESESSID?</span>
+        </div>
+
+        <div className="inputItem">
+          <button type="button" onClick={() => closeSettings()}>
+            Done
+          </button>
         </div>
       </form>
     </div>

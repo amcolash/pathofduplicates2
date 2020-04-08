@@ -44,3 +44,7 @@
   margin-top: 0.15rem;
   font-size: 0.75rem;
 }
+
+.inputItem button {
+  margin-top: 2rem;
+}
