@@ -53,7 +53,7 @@ export default class App extends React.Component {
           <br />
           <span>
             Source code and more info on{' '}
-            <a href="https://github.com/amcolash/pathofduplicates2" target="_blank">
+            <a href="https://github.com/amcolash/pathofduplicates2" target="_blank" rel="noopener noreferrer">
               Github
             </a>
             . NO DATA is stored on the server - only locally in your browser.
