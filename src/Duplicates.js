@@ -62,7 +62,7 @@ export default class Duplicates extends React.Component {
         ) : data ? (
           <div className="results">
             {data.map((dupe) => (
-              <div className="item">
+              <div className="item" key={dupe.item.id}>
                 <img src={dupe.item.icon} className="icon" />
                 <div>
                   <span>{dupe.item.typeLine}</span>
@@ -74,7 +74,7 @@ export default class Duplicates extends React.Component {
                     </Fragment>
                   ) : null}
                   {Object.keys(dupe.tabs).map((k) => (
-                    <Fragment>
+                    <Fragment key={k}>
                       <span>
                         {k}: {dupe.tabs[k]}
                       </span>

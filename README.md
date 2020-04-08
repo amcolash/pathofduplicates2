@@ -4,6 +4,8 @@ A tool to check for duplicate items in your POE inventory
 
 This is based off of the initial idea from [Bryan Carlson](https://github.com/braycarlson/pathofduplicates) but with some modern tools and simpler UX.
 
+The only items taken from his original work are some screenshots for instructions. All code is my own and both of the repos have an MIT license.
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

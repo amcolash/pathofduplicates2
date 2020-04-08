@@ -8,10 +8,12 @@ export default function SettingsComponent(props) {
     <div>
       <form>
         <div className="inputItem">
-          <label>User</label>
+          <label>Account</label>
           <input type="text" spellCheck="false" value={user} onChange={(e) => onValueChanged(e.target.value, league, poesessid)} />
           <div className="break"></div>
-          <span>What is my username?</span>
+          <a href="/images/account.png" target="_blank">
+            What is my account?
+          </a>
         </div>
 
         <div className="inputItem">
@@ -21,14 +23,18 @@ export default function SettingsComponent(props) {
             <option value="todo">TODO</option>
           </select>
           <div className="break"></div>
-          <span>What is my league?</span>
+          <a href="/images/league.png" target="_blank">
+            What is my league?
+          </a>
         </div>
 
         <div className="inputItem">
           <label>POESESSID</label>
           <input type="password" spellCheck="false" value={poesessid} onChange={(e) => onValueChanged(user, league, e.target.value)} />
           <div className="break"></div>
-          <span>What is my POESESSID?</span>
+          <a href="/images/poesessid.png" target="_blank">
+            What is my POESESSID?
+          </a>
         </div>
 
         <div className="inputItem">

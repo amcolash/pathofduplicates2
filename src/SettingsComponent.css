@@ -40,7 +40,8 @@
   color: #111;
 }
 
-.inputItem span {
+.inputItem a {
+  color: #000070;
   margin-top: 0.15rem;
   font-size: 0.75rem;
 }

@@ -25,9 +25,12 @@
 
 .icon {
   align-self: center;
-  padding-right: 1rem;
+  margin-right: 1rem;
   width: 2rem;
   height: 2rem;
+  padding: 0.5rem;
+  border: 0.1rem solid rgba(25, 26, 150, 0.5);
+  border-radius: 0.2rem;
 }
 
 .duplicates button .loader {
