@@ -39,9 +39,21 @@ export default class Duplicates extends React.Component {
       }
     });
 
-    const duplicates = [];
+    let duplicates = [];
     Object.keys(count).forEach((k) => {
       if (count[k].count > 1) duplicates.push(count[k]);
+    });
+
+    duplicates = duplicates.sort((a, b) => {
+      const aTabs = Object.keys(a.tabs).sort();
+      const bTabs = Object.keys(b.tabs).sort();
+
+      const tabCompare = aTabs[0].localeCompare(bTabs[0]);
+      if (tabCompare !== 0) return tabCompare;
+
+      const aName = a.item.typeLine + a.item.name;
+      const bName = b.item.typeLine + b.item.name;
+      return aName.localeCompare(bName);
     });
 
     this.setState({ data: duplicates });
