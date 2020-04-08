@@ -1,9 +1,17 @@
 .settingsIcon {
-  color: #ddd;
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  color: #ddd;
+  background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+  transition: all 0.25s;
+}
+
+.settingsIcon:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .inputItem {

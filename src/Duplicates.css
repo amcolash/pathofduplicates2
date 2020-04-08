@@ -3,7 +3,7 @@
 }
 
 .error {
-  color: red;
+  color: rgb(180, 0, 0);
 }
 
 .results {
@@ -29,7 +29,7 @@
   width: 2rem;
   height: 2rem;
   padding: 0.5rem;
-  border: 0.1rem solid rgba(25, 26, 150, 0.5);
+  border: 0.1rem solid #4527a0;
   border-radius: 0.2rem;
 }
 

@@ -63,7 +63,7 @@ export default class Duplicates extends React.Component {
           <div className="results">
             {data.map((dupe) => (
               <div className="item" key={dupe.item.id}>
-                <img src={dupe.item.icon} className="icon" />
+                <img src={dupe.item.icon} className="icon" alt="icon" />
                 <div>
                   <span>{dupe.item.typeLine}</span>
                   <br />
