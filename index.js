@@ -1,12 +1,26 @@
 const axios = require('axios');
 const cors = require('cors');
 const express = require('express');
+const fs = require('fs');
 
 const app = express();
 app.use(cors());
 
 const port = 8002;
-app.listen(port, () => console.log(`http://localhost:${port}`));
+
+// Use https if cert exists - DO NOT RUN IN PROD WITHOUT HTTPS
+if (fs.existsSync('.cert')) {
+  // HTTPS setup - assumes running on nas where the .cert folder is symlinked from the let's encrypt spot
+  const credentials = {};
+  credentials.key = fs.readFileSync('./.cert/privkey.pem');
+  credentials.cert = fs.readFileSync('./.cert/fullchain.pem');
+
+  // Make the server
+  const server = require('https').createServer(credentials, app);
+  server.listen(port, () => console.log(`https on port ${PORT}`));
+} else {
+  app.listen(port, () => console.log(`http://localhost:${port}`));
+}
 
 // Static assets
 app.use('/', express.static('build'));
