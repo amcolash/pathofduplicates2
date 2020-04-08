@@ -47,6 +47,9 @@ export default class App extends React.Component {
             <Duplicates user={user} league={league} poesessid={poesessid} />
           )}
         </Card>
+        <footer>
+          Note: Data may be up to 5 minutes behind live items in your stash. This is to help prevent rate-limiting on your account.
+        </footer>
       </div>
     );
   }

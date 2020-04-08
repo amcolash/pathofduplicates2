@@ -11,8 +11,8 @@ app.listen(port, () => console.log(`http://localhost:${port}`));
 // Static assets
 app.use('/', express.static('build'));
 
-// TODO: This is temporary
-const cacheAge = 60 * 30;
+// Make all requests cached for 5 minutes on clients to prevent rate-limiting
+const cacheAge = 60 * 5;
 
 // POE proxy to override cookies and bypass CORS
 app.get('/poe', (req, res) => {

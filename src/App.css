@@ -9,3 +9,10 @@
 .break {
   flex-basis: 100%;
 }
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 0.75rem;
+  color: #ddd;
+}
