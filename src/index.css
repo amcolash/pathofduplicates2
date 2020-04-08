@@ -5,4 +5,35 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: #283593;
   color: #111;
+  user-select: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5f5fc4;
+  color: #f5f5f5;
+  border: none;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+button:disabled {
+  filter: saturate(0.5) brightness(1.5);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

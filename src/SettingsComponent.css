@@ -1,7 +1,9 @@
-form {
-  min-width: 25rem;
-  max-width: 35rem;
-  width: 35vw;
+.settingsIcon {
+  color: #ddd;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
 }
 
 .inputItem {

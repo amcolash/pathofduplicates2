@@ -1,0 +1,33 @@
+.duplicates {
+  display: flex;
+}
+
+.error {
+  color: red;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  padding: 1rem;
+}
+
+.icon {
+  align-self: center;
+  padding-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.duplicates button .loader {
+  margin-left: 0.5rem;
+  width: 1.25rem;
+  animation: spin 3s infinite;
+}

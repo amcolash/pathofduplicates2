@@ -1,7 +1,7 @@
 import React from 'react';
-import './Settings.css';
+import './SettingsComponent.css';
 
-export default function Settings(props) {
+export default function SettingsComponent(props) {
   const { user, league, poesessid, onValueChanged } = props;
 
   return (
