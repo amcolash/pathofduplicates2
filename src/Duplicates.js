@@ -11,7 +11,7 @@ export default class Duplicates extends React.Component {
     this.setState({ loading: true });
 
     const { user, league, poesessid } = this.props;
-    const server = `${window.location.protocol}//${window.location.hostname}:9050`;
+    const server = `${window.location.protocol}//${window.location.hostname}:8002`;
 
     axios
       .get(`${server}/poe`, { params: { user, league, poesessid } })

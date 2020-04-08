@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 app.use(cors());
 
-const port = 9050;
+const port = 8002;
 app.listen(port, () => console.log(`http://localhost:${port}`));
 
 // Static assets
