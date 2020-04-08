@@ -17,7 +17,7 @@ if (fs.existsSync('.cert')) {
 
   // Make the server
   const server = require('https').createServer(credentials, app);
-  server.listen(port, () => console.log(`https on port ${PORT}`));
+  server.listen(port, () => console.log(`https on port ${port}`));
 } else {
   app.listen(port, () => console.log(`http://localhost:${port}`));
 }
